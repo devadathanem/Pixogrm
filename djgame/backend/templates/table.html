@@ -1,0 +1,21 @@
+<table border="1">
+    <tr>
+        <th>prodectname</th>
+        <th>price</th>
+        <th>quntity</th>
+        <th>image</th>
+        <th>actions</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.prize}}</td>
+        <td>{{i.quntity}}</td>
+        <td><img src="{{i.image.url}}" alt="" height="100" width="100"></td>
+        <td>
+            <button><a href="{% url 'edit' dataid=i.id %}">edit</a></button>
+            <button><a href="{% url 'delete' dataid=i.id %}">delete</a></button>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

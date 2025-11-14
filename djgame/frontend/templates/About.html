@@ -1,0 +1,70 @@
+{% extends 'Index.html' %}
+{% block content %}
+
+<div class="container py-5 text-light" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div class="text-center mb-5">
+    <h1 class="text-success fw-bold" style="font-size: 3rem;">About Us</h1>
+</div>
+
+  <!-- Section 1 -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="../static/about/pexels-anastasia-shuraeva-7278592.jpg" alt="Our Team" class="img-fluid rounded-4 shadow-lg">
+    </div>
+    <div class="col-md-6">
+      <h3 class="text-success">Who We Are</h3>
+      <p class="text-light" style="text-align:justify;">
+        <span class="text-success fw-semibold">Pixogram</span> is a creative community of passionate photographers, 
+        artists, and storytellers. We believe that every picture has a voice, every frame holds emotion, 
+        and every shot captures a piece of life’s magic. Our goal is to transform fleeting moments into timeless memories 
+        through artistry and precision.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="../static/about/pexels-kha-ruxury-287153-3065871.jpg" alt="Our Mission" class="img-fluid rounded-4 shadow-lg">
+    </div>
+    <div class="col-md-6">
+      <h3 class="text-success">Our Mission</h3>
+      <p class="text-light" style="text-align:justify;">
+        Our mission is simple — to tell stories through light and lens. 
+        We strive to blend technical mastery with artistic flair, producing images that move hearts 
+        and inspire minds. Whether it’s a portrait, an event, or a creative project, we aim to create 
+        visuals that reflect authenticity, emotion, and connection.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="../static/about/pexels-chuck-3744196.jpg" alt="Our Vision" class="img-fluid rounded-4 shadow-lg">
+    </div>
+    <div class="col-md-6">
+      <h3 class="text-success">Our Vision</h3>
+      <p class="text-light" style="text-align:justify;">
+        We envision <span class="text-success fw-semibold">Pixogram</span> as more than a platform — 
+        it’s a movement of creative expression. Our vision is to connect people through photography, 
+        to celebrate diversity, and to capture the beauty in every story. 
+        We believe that through art, we can make memories eternal and emotions unforgettable.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 4: Why Choose Us -->
+  <div class="text-center mt-5">
+    <h3 class="text-success mb-3">Why Choose Us?</h3>
+    <p class="mx-auto text-light" style="max-width: 750px; text-align:justify;">
+      From our attention to detail to our dedication to creativity, we go beyond simply taking pictures — 
+      we craft visual experiences. Whether you’re a business looking for striking imagery or 
+      an individual seeking to immortalize your most meaningful moments, <span class="text-success fw-semibold">Pixogram</span> 
+      delivers emotion, depth, and artistry in every frame.
+    </p>
+    <a href="{% url 'Gallery' %}" class="btn btn-outline-success mt-4 px-4 py-2">Explore Our Gallery</a>
+  </div>
+</div>
+
+{% endblock %}
